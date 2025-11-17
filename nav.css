@@ -1,0 +1,168 @@
+.pie {
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 400px;
+    left: -200px;
+    position: absolute;
+    top: -200px;
+    width: 400px;
+    transform: translateX(-200px) translateY(-200px);
+    transition: transform 300ms;
+    z-index: 10;
+}
+
+.pie1 {
+    clip-path: polygon(200px 200px, 344px 450px, 0 450px);
+    transition-delay: 30ms;
+    background-color: #ddd;
+    z-index: 10;
+}
+
+.pie1:hover {
+    background-color: #eee;
+}
+
+.pie1.active {
+    background-color: #fff;
+}
+
+.pie2 {
+    clip-path: polygon(200px 200px, 344px 450px, 450px 344px);
+    transition-delay: 60ms;
+    background-color: #ddd;
+    z-index: 10;
+}
+
+.pie2:hover {
+    background-color: #eee;
+}
+
+.pie2.active {
+    background-color: #fff;
+}
+
+.pie3 {
+    clip-path: polygon(200px 200px, 450px 0, 450px 344px);
+    transition-delay: 90ms;
+    background-color: #ddd;
+    z-index: 10;
+}
+
+.pie3:hover {
+    background-color: #eee;
+}
+
+.pie3.active {
+    background-color: #fff;
+}
+
+.controller {
+    left: 216px;
+    position: absolute;
+    top: 300px;
+    width: 46px;
+    z-index: 10;
+}
+
+.magnifying-glass {
+    left: 288px;
+    position: absolute;
+    top: 258px;
+    width: 46px;
+    z-index: 10;
+}
+
+.book {
+    left: 324px;
+    position: absolute;
+    top: 188px;
+    width: 46px;
+    z-index: 10;
+}
+
+.controller,
+.magnifying-glass,
+.book {
+    transition: transform 0.3s ease, width 0.3s ease;
+    transform-origin: center; /* Verhindert, dass sich das Icon nach oben bewegt */
+}
+
+.pie1:hover .controller,
+.pie2:hover .magnifying-glass,
+.pie3:hover .book {
+    width: 40px;
+}
+
+.menu {
+    -webkit-tap-highlight-color: transparent;
+    background: #459fc8;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 200px;
+    left: -100px;
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    z-index: 10;
+}
+
+.hamburger {
+    cursor: pointer;
+    height: 46px;
+    left: 58%;
+    position: relative;
+    top: 58%;
+    width: 46px;
+    z-index: 10;
+}
+
+.hamburger path {
+    transition: transform 300ms;
+}
+
+.hamburger path:nth-child(1) {
+    transform-origin: 25% 29%;
+}
+
+.hamburger path:nth-child(2) {
+    transform-origin: 50% 50%;
+}
+
+.hamburger path:nth-child(3) {
+    transform-origin: 75% 72%;
+}
+
+.hamburger path:nth-child(4) {
+    transform-origin: 75% 29%;
+}
+
+.hamburger path:nth-child(5) {
+    transform-origin: 25% 72%;
+}
+
+.active .pie {
+    transform: translateX(0) translateY(0);
+}
+
+.active .hamburger path:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.active .hamburger path:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.active .hamburger path:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.active .hamburger path:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+.active .hamburger path:nth-child(5) {
+    transform: rotate(-45deg);
+}

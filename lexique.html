@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lexique.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Popup/popup.css">
+
+    <link rel="icon" href="Bilder/book.svg" type="image/x-icon">
+
+    <script src="verben.js"></script>
+    <script src="script.js"></script>
+    <script src="Popup/popup.js"></script>
+
+    <title>Französisch Verben</title>
+</head>
+
+<body>
+    <nav>
+        <div class="pie pie1" onclick="window.location.href='theory.html'">
+            <svg class="controller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100">
+                <path class="stone_een"
+                    d="M30,22v3c0,0.552-0.448,1-1,1h-1c-0.552,0-1-0.448-1-1v-3c0-0.552,0.448-1,1-1v-7.539l-11.198-0.896
+        C16.621,12.822,16.337,13,16,13c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1c0.396,0,0.732,0.235,0.894,0.57l11.186,0.895
+        c0.516,0.041,0.92,0.479,0.92,0.997V21C29.552,21,30,21.448,30,22z M16,19.725c-0.547,0-1.094-0.111-1.603-0.334L8,16.592v2.227
+        c0,1.136,0.642,2.175,1.658,2.683l0,0C11.655,22.501,13.827,23,16,23s4.345-0.499,6.341-1.497l0,0C23.358,20.995,24,19.956,24,18.82
+        v-2.227l-6.397,2.799C17.094,19.614,16.547,19.725,16,19.725z M29.906,11.084L17.202,5.526C16.819,5.358,16.41,5.275,16,5.275
+        c-0.41,0-0.819,0.084-1.202,0.252L2.094,11.084c-0.799,0.35-0.799,1.483,0,1.832l12.703,5.559c0.765,0.334,1.641,0.334,2.405,0
+        l9.416-4.121l-9.438-0.755C16.843,13.858,16.434,14,16,14c-1.103,0-2-0.897-2-2c0-1.103,0.897-2,2-2
+        c0.552,0,1.062,0.224,1.431,0.609l10.729,0.858c0.842,0.067,1.525,0.666,1.751,1.445C30.704,12.561,30.703,11.433,29.906,11.084z" />
+            </svg>
+
+        </div>
+        <div class="pie pie2" onclick="window.location.href='quiz.html'">
+            <svg class="magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100"
+                height="100">
+                <path d="M41,20c0,1.657-1.342,3-3,3c-8.271,0-15,6.729-15,15c0,1.657-1.342,3-3,3s-3-1.343-3-3
+                c0-11.58,9.422-21,21-21C39.658,17,41,18.343,41,20z M95,80c0,8.271-6.729,15-15,15c-0.797,0-1.559-0.316-2.121-0.879l-18-18
+                C59.316,75.559,59,74.795,59,74c0-3.052,0.927-5.887,2.499-8.259l-2.398-2.398C53.376,68.118,46.02,71,38,71
+                C19.804,71,5,56.196,5,38S19.804,5,38,5s33,14.804,33,33c0,8.02-2.881,15.376-7.656,21.101l2.398,2.398
+                C68.113,59.927,70.948,59,74,59c0.797,0,1.559,0.316,2.121,0.879l18,18C94.684,78.441,95,79.205,95,80z M38,65
+                c14.889,0,27-12.113,27-27S52.889,11,38,11S11,23.113,11,38S23.111,65,38,65z M88.924,81.167l-16.09-16.093
+                c-4.031,0.524-7.233,3.727-7.758,7.758l16.09,16.093C85.197,88.401,88.399,85.199,88.924,81.167z" />
+            </svg>
+        </div>
+        <div class="pie pie3 active" onclick="window.location.href='lexique.html'">
+            <div class="pie-color">
+                <svg class="book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100">
+                    <path
+                        d="M20 22V2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3ZM8 6h8v2H8ZM6 19a1 1 0 0 1 .31-.71A.93.93 0 0 1 7 18h11v2H7a1 1 0 0 1-1-1Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="menu" onclick="document.body.classList.toggle('active')">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                <g fill="none" stroke="#000" stroke-width="7.999" stroke-linecap="round">
+                    <path d="M 55,26.000284 L 24.056276,25.999716" />
+                    <path d="M 24.056276,49.999716 L 75.943724,50.000284" />
+                    <path d="M 45,73.999716 L 75.943724,74.000284" />
+                    <path d="M 75.943724,26.000284 L 45,25.999716" />
+                    <path d="M 24.056276,73.999716 L 55,74.000284" />
+                </g>
+            </svg>
+        </div>
+    </nav>
+
+    <input id="input" oninput="suggestion()" autocomplete="off">
+    <div id="suggestions"></div>
+
+    <button onclick="search()">Suchen</button>
+
+    <div id="popup">
+        <p id="content"></p>
+        <button id="close" onclick="hidePopup()">X</button>
+    </div>
+
+    <div id="background"></div>
+
+    <script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                if (document.activeElement.tagName === "INPUT" && document.activeElement.type === "text") {
+                    search();
+                }
+            }
+        });
+
+        document.getElementById("input").addEventListener("focusout", (event) => {
+            setTimeout(() => {
+                if (!document.getElementById("suggestions").contains(document.activeElement)) {
+                    clearSuggestions();
+                }
+            }, 50);
+        });
+
+        function bindVowels(string) {
+            var combos = ["se_a", "se_e", "se_i", "se_o", "se_u", "se_h", "se_é", "se_è", "se_ê", "se_à", "se_â"];
+            for (var combo of combos) {
+                string = string.replace(combo, "s'" + combo[3])
+            }
+            return string;
+        }
+
+        function unbindVowels(string) {
+            return string.replace("'", "e_");
+        }
+
+        function clearSuggestions() {
+            var suggestions = document.getElementById("suggestions");
+            suggestions.innerHTML = "";
+            suggestions.style.border = "none";
+        }
+
+        var verbList = Object.keys(verbs);
+
+        function suggestion() {
+            var input = unbindVowels(document.getElementById("input").value).replace(" ", "_");
+            var suggestions = document.getElementById("suggestions");
+            suggestions.innerHTML = "";
+
+            if (input.length === 0) {
+                clearSuggestions();
+                return;
+            }
+
+            let hasSuggestions = false;
+
+            for (let verb of verbList) {
+                if (verb.startsWith(input)) {
+                    let suggestion = document.createElement("button");
+                    suggestion.innerText = bindVowels(verb).replace("_", " ");
+                    suggestion.className = "suggestionElement";
+
+                    suggestion.addEventListener("pointerdown", (e) => {
+                        e.preventDefault();
+                        document.getElementById("input").value = verb.replace("_", " ");
+                        search();
+                        clearSuggestions();
+                    });
+
+                    suggestions.appendChild(suggestion);
+                    hasSuggestions = true;
+                }
+            }
+
+            suggestions.style.border = hasSuggestions ? "#575757 0.5px solid" : "none";
+        }
+
+        function search() {
+            var suggestions = document.getElementById("suggestions");
+            suggestions.innerHTML = '';
+            suggestions.style = "border: none;"
+            var verb = document.getElementById("input").value.toLowerCase().trim();
+            verb = verb.replace(' ', '_');
+
+            if (!verbList.includes(verb)) {
+                showPopup("Verb nicht gefunden!")
+                return;
+            }
+
+            localStorage.setItem("verb", verb.replace('_', ' '));
+
+            const personnes = ["je", "tu", "il", "nous", "vous", "ils"];
+            const temps = ["present", "conditionnel_present", "conditionnel_passe", "passe_compose", "imparfait", "plus_que_parfait", "futur_simple", "futur_proche", "futur_anterieur", "imperatif", "subjonctif", "passe_recent"];
+
+            for (let t = 0; t < temps.length; t++) {
+                for (let p = 0; p < personnes.length; p++) {
+                    if (temps[t] === "imperatif" && (p !== 1 && p !== 3 && p !== 4)) {
+                        var konjugiertesVerb = "-";
+                    } else {
+                        var konjugiertesVerb = getTemp(verb, window[temps[t]], personnes[p]);
+                    }
+                    if (temps[t] === "subjonctif") {
+                        if (vokale.includes(konjugiertesVerb[0])) {
+                            konjugiertesVerb = "qu'" + konjugiertesVerb;
+                        } else {
+                            konjugiertesVerb = "que " + konjugiertesVerb;
+                        }
+                    }
+
+                    document.getElementById(temps[t]).rows[p + 1].cells[0].innerHTML = konjugiertesVerb;
+                }
+            }
+        }
+
+        function isOverflowing(elementId) {
+            const div = document.getElementById(elementId);
+            const thElements = div.querySelectorAll('th');
+
+            for (const element of thElements) {
+                if (element.scrollHeight > 60) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function adjustWidth() {
+            if (isOverflowing("conditionnel_present")) {
+                document.querySelectorAll('table').forEach(table => {
+                    table.style.width = '45%';
+                });
+
+                if (isOverflowing("conditionnel_present")) {
+                    document.querySelectorAll('table').forEach(table => {
+                        table.style.width = '90%';
+                    });
+                }
+            }
+        }
+
+        window.onload = function () {
+            adjustWidth();
+
+            var verb = window.localStorage.getItem('verb');
+            if (verb == null) {
+                verb = "avoir";
+            }
+            document.getElementById("input").value = verb;
+            search();
+        }
+
+        window.addEventListener('resize', function () {
+            document.querySelectorAll('table').forEach(table => {
+                table.style.width = '30%';
+            });
+            adjustWidth();
+        });
+    </script>
+
+    <div class="container">
+        <table id="present">
+            <tr>
+                <th>présent</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="conditionnel_present">
+            <tr>
+                <th>conditionnel présent</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="conditionnel_passe">
+            <tr>
+                <th>conditionnel passé</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="passe_compose">
+            <tr>
+                <th>passé composé</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="imparfait">
+            <tr>
+                <th>imparfait</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="plus_que_parfait">
+            <tr>
+                <th>plus-que-parfait</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="futur_simple">
+            <tr>
+                <th>futur simple</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="futur_proche">
+            <tr>
+                <th>futur proche</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="futur_anterieur">
+            <tr>
+                <th>futur antérieur</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table class="imperatif" id="imperatif">
+            <tr>
+                <th>impératif</th>
+            </tr>
+            <tr>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <table id="subjonctif">
+            <tr>
+                <th>subjonctif</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+        <table id="passe_recent">
+            <tr>
+                <th>passé recent</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="nous"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="report-container">
+        <a id="report"
+            href="mailto:verbagallica@gmail.com?subject=Fehler%20gemeldet&body=Es%20gibt%20einen%20Fehler%20bei%0A%0A•%20diesem%20Wort:%0A•%20und%20dieser%20Zeitform:">Fehler
+            melden</a>
+    </div>
+</body>
+
+</html>

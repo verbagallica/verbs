@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+#theory-container {
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;   /* Abstand zwischen Karten */
+}
+
+.verb-form {
+    flex: 0 0 calc(50% - 70px); /* Fix 2 pro Reihe */
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #459fc8;
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.1);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .verb-form {
+        flex: 0 0 calc(90%);
+    }
+
+    #theory-container {
+        margin: 0 auto;
+        margin-top: 120px;
+        width: 80%;
+    }
+}
+
+table {
+    width: 100%;
+    color: black;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    height: 30px;
+}
